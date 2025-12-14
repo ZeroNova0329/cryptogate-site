@@ -1,0 +1,97 @@
+CryptoGate Bot
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoGate Bot | Discord Encryption Bot</title>
+  <style>
+    body{font-family:"Segoe UI",system-ui,sans-serif;background:#0f1220;color:#e5e7eb;margin:0;line-height:1.7}
+    header{background:linear-gradient(135deg,#6366f1,#22d3ee);padding:60px 20px;text-align:center}
+    section{max-width:1100px;margin:auto;padding:50px 20px}
+    h1{font-size:2.8rem;margin-bottom:10px}
+    h2{border-left:6px solid #6366f1;padding-left:12px}
+    .card{background:#111827;border-radius:16px;padding:25px;margin-bottom:25px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .btn{display:inline-block;background:#22d3ee;color:#020617;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:bold;margin:6px;cursor:pointer}
+    footer{text-align:center;padding:30px;background:#020617;color:#9ca3af;font-size:.9rem}
+    pre{background:#020617;padding:15px;border-radius:10px;overflow-x:auto}
+    .lang{display:none}
+  </style>
+  <script>
+    function setLang(l){
+      document.querySelectorAll('.lang').forEach(e=>e.style.display='none');
+      document.getElementById(l).style.display='block';
+    }
+  </script>
+</head>
+<body onload="setLang('jp')">
+
+<header>
+  <h1>🔐 CryptoGate Bot</h1>
+  <p>誰でも使える・誰でも復号できる Discord 暗号化 Bot</p>
+  <div>
+    <span class="btn" onclick="setLang('jp')">日本語</span>
+    <span class="btn" onclick="setLang('en')">English</span>
+    <a class="btn" href="YOUR_BOT_INVITE_LINK" target="_blank">🤖 Botを招待</a>
+  </div>
+</header>
+
+<section id="jp" class="lang">
+  <div class="card">
+    <h2>このBotについて</h2>
+    <p><strong>CryptoGate Bot</strong> は、Discord上で文字列の暗号化・復号を行える公開Botです。暗号文は英大文字・英小文字・数字（Base62）のみで構成されます。</p>
+  </div>
+
+  <div class="card">
+    <h2>コマンド一覧</h2>
+    <pre>/auth register <login_id> <password>
+/auth login <login_id> <password>
+/auth list
+/encrypt <text>
+/decrypt <text></pre>
+  </div>
+
+  <div class="card">
+    <h2>利用規約</h2>
+    <p>本Botは公開サーバー向けに提供されます。Botの利用により生じたいかなる損害についても、運営者は責任を負いません。Botの仕様は予告なく変更・停止される場合があります。違法行為、機密情報の暗号化は禁止します。</p>
+  </div>
+
+  <div class="card">
+    <h2>プライバシーポリシー</h2>
+    <p>本BotはDiscordのユーザーID、サーバーID、コマンド入力内容を機能提供のために使用します。取得した情報は第三者に提供されません。</p>
+  </div>
+</section>
+
+<section id="en" class="lang">
+  <div class="card">
+    <h2>About</h2>
+    <p><strong>CryptoGate Bot</strong> is a public Discord bot that allows users to encrypt and decrypt text using Base62 characters.</p>
+  </div>
+
+  <div class="card">
+    <h2>Commands</h2>
+    <pre>/auth register <login_id> <password>
+/auth login <login_id> <password>
+/auth list
+/encrypt <text>
+/decrypt <text></pre>
+  </div>
+
+  <div class="card">
+    <h2>Terms of Service</h2>
+    <p>This bot is provided "as is". We are not responsible for any damages caused by the use of this bot. Usage for illegal activities or sensitive data is prohibited.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy Policy</h2>
+    <p>This bot may collect Discord User IDs and Guild IDs for functionality purposes only. No data is shared with third parties.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 CryptoGate Bot</p>
+</footer>
+
+</body>
+</html>
+```
